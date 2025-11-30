@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reveal.js Presentation Blackrock</title>
+
+  <!-- Reveal.js Core Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css" />
+
+  <!-- Non‑default Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/moon.css" id="theme" />
+
+  <style>
+    /* Optional custom styling */
+    .reveal .slides section {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    .image-small {
+      width: 60%;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Slide 1 (Markdown) -->
+      <section data-markdown>
+        <textarea data-template>
+      # Reveal.js Boilerplate
+      Using **CDN** version — *no installation required!*
+      
+      ---
+      
+      ## Features
+      - Pure Markdown inside HTML
+      - CDN‑hosted reveal.js
+      - Vertical + horizontal slides
+      - Custom theme (moon)
+        </textarea>
+      </section>
+
+      <!-- Horizontal Slide 2 with Vertical stack -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+## Horizontal Slide
+
+This is the top-level slide.
+
+Use **↓ Down Arrow** for nested slides.
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+## Vertical Slide 1
+Nested slide content here.
+          </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+## Vertical Slide 2
+Another nested slide.
+          </textarea>
+        </section>
+      </section>
+
+      <!-- Slide with an Image -->
+      <section data-markdown>
+        <textarea data-template>
+## Image Example
+
+![Example](https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1000&q=80){.image-small}
+        </textarea>
+      </section>
+
+      <!-- Final slide -->
+      <section data-markdown>
+        <textarea data-template>
+## Done!
+Your Reveal.js CDN presentation is ready to publish.
+
+### How to deploy to GitHub Pages
+1. Create a repo
+2. Add this file as **index.html**
+3. Enable GitHub Pages (root directory)
+4. Open your URL
+        </textarea>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Reveal.js Core Script -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
+  <!-- Markdown Plugin -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: "slide", // Options: none/fade/slide/convex/concave/zoom
+      plugins: [RevealMarkdown],
+    });
+  </script>
+</body>
+</html>
