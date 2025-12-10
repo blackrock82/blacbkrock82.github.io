@@ -1,112 +1,108 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reveal.js Presentation Blackrock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>BlackRock AI Hosting</title>
 
   <!-- Reveal.js Core Styles -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css" />
 
-  <!-- Non‑default Theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/moon.css" id="theme" />
+  <!-- Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/league.css" id="theme" />
 
-  <style>
-    /* Optional custom styling */
-    .reveal .slides section {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-    }
-    .image-small {
-      width: 60%;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-    }
-  </style>
+  <!-- Syntax Highlighting -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- Slide 1 (Markdown) -->
-      <section data-markdown>
+      <!-- Slide 1 -->
+      <section data-markdown data-background-image="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" data-background-opacity="0.5">
         <textarea data-template>
-      # Reveal.js Boilerplate
-      Using **CDN** version — *no installation required!*
-      
-      ---
-      
-      ## Features
-      - Pure Markdown inside HTML
-      - CDN‑hosted reveal.js
-      - Vertical + horizontal slides
-      - Custom theme (moon)
+# BLACKROCK AI HOSTING
+High-Performance Cloud Infrastructure for Artificial Intelligence
+
+Created by BlackRock Tech Team
+
+---
+
+## Our Services
+- AI Hosting  
+- Application Design & Development  
+- IoT API Design  
+- Hardware Sales
         </textarea>
       </section>
 
-      <!-- Horizontal Slide 2 with Vertical stack -->
+      <!-- Slide Group -->
       <section>
-        <section data-markdown>
+
+        <section data-markdown data-background-image="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg" data-background-opacity="0.5">
           <textarea data-template>
-## Horizontal Slide
-
-This is the top-level slide.
-
-Use **↓ Down Arrow** for nested slides.
+## AI Hosting
+Reliable, scalable infrastructure for running AI models and workloads with high performance and minimal setup.
           </textarea>
         </section>
 
-        <section data-markdown>
+        <section data-markdown data-background-image="https://images.pexels.com/photos/247791/pexels-photo-247791.png" data-background-opacity="0.5">
           <textarea data-template>
-## Vertical Slide 1
-Nested slide content here.
+## Application Design & Development
+End-to-end creation of modern, intuitive software solutions tailored to your business needs.
           </textarea>
         </section>
 
-        <section data-markdown>
+        <section data-markdown data-background-image="https://images.pexels.com/photos/13660566/pexels-photo-13660566.jpeg" data-background-opacity="0.5">
           <textarea data-template>
-## Vertical Slide 2
-Another nested slide.
+## IoT API Design
+Secure, efficient APIs that seamlessly connect IoT devices, data streams, and cloud services.
           </textarea>
         </section>
+
+        <section data-markdown data-background-image="https://images.pexels.com/photos/3520694/pexels-photo-3520694.jpeg" data-background-opacity="0.5">
+          <textarea data-template>
+## Hardware Sales
+Quality, enterprise-grade hardware solutions to support your applications, networks, and operational needs.
+          </textarea>
+        </section>
+
       </section>
 
-      <!-- Slide with an Image -->
+      <!-- Team Slide -->
       <section data-markdown>
         <textarea data-template>
-## Image Example
+## Meet the Team
 
-![Example](https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1000&q=80){.image-small}
+![Team](https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg)
         </textarea>
       </section>
 
-      <!-- Final slide -->
-      <section data-markdown>
+      <!-- Final Slide -->
+      <section data-markdown data-background-image="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg" data-background-opacity="0.5">
         <textarea data-template>
-## Done!
-Your Reveal.js CDN presentation is ready to publish.
+## THANK YOU!!
+High-Performance Cloud Infrastructure for Artificial Intelligence
 
-### How to deploy to GitHub Pages
-1. Create a repo
-2. Add this file as **index.html**
-3. Enable GitHub Pages (root directory)
-4. Open your URL
+### Get in Touch  
+https://blackrock82.github.io
         </textarea>
       </section>
 
     </div>
   </div>
 
-  <!-- Reveal.js Core Script -->
+  <!-- Reveal.js Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
-  <!-- Markdown Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/plugin/notes/notes.js"></script>
 
   <script>
     Reveal.initialize({
       hash: true,
-      slideNumber: true,
-      transition: "slide", // Options: none/fade/slide/convex/concave/zoom
-      plugins: [RevealMarkdown],
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
     });
   </script>
 </body>
