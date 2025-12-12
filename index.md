@@ -4,7 +4,15 @@ title: "Home"
 permalink: /
 ---
 
+Welcome to My Home Page
+
 # Welcome to Blackrock Hosting
+
+{% assign date = '2025-12-12T10:15:30Z' %}
+
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}
+
 
 High-Performance Cloud Infrastructure for Artificial Intelligence
 
