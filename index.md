@@ -8,7 +8,7 @@ Welcome to My Home Page
 
 # Welcome to Blackrock Hosting
 
-{% assign date = '2025-12-12T10:15:30Z' %}
+{% assign date = '2020-04-13T10:20:00Z' %}
 
 - Original date - {{ date }}
 - With timeago filter - {{ date | timeago }}
